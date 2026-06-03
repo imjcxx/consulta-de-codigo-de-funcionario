@@ -1,4 +1,4 @@
-# Consulta-de-C-digo-de-Funcionario
+# consulta de codigo de funcionario
 Sistema rápido para checar o desempenho de vendedores.
 import java.util.Scanner;
 /**
