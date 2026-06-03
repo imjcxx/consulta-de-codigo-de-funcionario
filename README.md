@@ -1,41 +1,16 @@
-# consulta de codigo de funcionario
+# 👥 Sistema de Consulta de Desempenho de Vendedores
 
+Uma solução ágil desenvolvida para o gerenciamento de equipes de vendas. O sistema permite que gestores consultem rapidamente dados de produtividade para tomada de decisões administrativas.
 
-import java.util.Scanner;
-/**
- *
- * @author joana
- */
-public class ConsultaDeFuncionario {
-    public static double totalVendido(String Cod){ 
-        double valorReturn = 0;
-      //preenchendo o vetor com código de vendedor.
-        String [] vetorCod = {"G589","F461","H270","C116","Z348"};
-       //preenchendo vetor com valor de vendas.
-        double [] vetorVnd = {150,598,2.350,5.798,15.768};
-        boolean encontrado = false;
-       for(int i=0; i<vetorCod.length; i++){   
-            
-                if(Cod.equals(vetorCod[i])){
-                    valorReturn = vetorVnd[i];
-                  encontrado = true;
-                         break;
-                }
-      } if(encontrado==false) {
-                    System.out.println("Vendedor não encontrado");
-                }
-      
-      return valorReturn;
-    } 
-     
-    public static void main(String[]args){
-        Scanner input = new Scanner (System.in);
-         //{"G589","F461","H270","C116","Z348"}
-       System.out.println("Digite seu código de identificação");
-        String infCod = input.next();
-        
-       double valor = totalVendido(infCod);
-        
-        System.out.printf("O valor vendido pelo %s é %.2f", infCod,valor);
-    }
-}
+## 🎯 Funcionalidades
+- **Busca por ID/Código:** Consulta otimizada do cadastro de funcionários através de identificadores únicos.
+- **Análise de Produtividade:** Apresentação de métricas individuais de desempenho de forma limpa e direta.
+
+## 🛠️ Tecnologias e Conceitos Aplicados
+- **Linguagem:** java
+- **Conceitos:** Estruturas de decisão condicionais `if/else` e boolean, manipulação de dados de funcionários e boas práticas de lógica estruturada.
+
+## 💻 Como Executar o Projeto
+1. Abra o projeto na sua IDE favorita.
+2. Rode o arquivo principal.
+3. Insira o código do funcionário no terminal para testar a busca de dados.
